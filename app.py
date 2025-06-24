@@ -469,7 +469,7 @@ def main():
         perf_col1, perf_col2, perf_col3, perf_col4 = st.columns(4)
         
         with perf_col1:
-            st.metric("Accuracy", "78.66%")
+            st.metric("Accuracy", "79.30%")
         with perf_col2:
             st.metric("Training Data", "102K+ tweets")
         with perf_col3:
