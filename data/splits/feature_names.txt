@@ -1,0 +1,17 @@
+Hour
+Day
+IsReshare
+Klout
+Sentiment
+hashtag_count
+mention_count
+url_count
+text_length
+clean_text_length
+word_count
+IsWeekend
+is_US
+is_male
+is_female
+like_rate
+retweet_rate
