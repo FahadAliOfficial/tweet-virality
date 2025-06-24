@@ -4,7 +4,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.40.2-red.svg)
 ![XGBoost](https://img.shields.io/badge/XGBoost-2.1.3-orange.svg)
 ![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn-green.svg)
-![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+<!--![License](https://img.shields.io/badge/License-MIT-lightgrey.svg) !-->
 
 An advanced machine learning application that predicts Twitter post virality using a trained XGBoost model with 78.66% accuracy. Built with Streamlit for an interactive user experience, this app analyzes tweet content, user profiles, and timing to provide actionable insights for social media optimization.
 
