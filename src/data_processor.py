@@ -97,7 +97,8 @@ class TwitterDataProcessor:
             print(f"\n🎯 Target Variables Statistics:")
             targets = ['Reach', 'RetweetCount', 'Likes']
             for target in targets:
-                if target in self.df.columns:                    print(f"  {target}: Mean={self.df[target].mean():.1f}, Max={self.df[target].max()}")
+                if target in self.df.columns:                    
+                    print(f"  {target}: Mean={self.df[target].mean():.1f}, Max={self.df[target].max()}")
     
     def clean_sensitive_data(self):
         """Remove or anonymize sensitive information"""

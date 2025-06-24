@@ -33,7 +33,7 @@ def train_and_evaluate_model():
     # Initialize the XGBoost Regressor with some sensible defaults
     xgb_reg = xgb.XGBRegressor(
         objective='reg:squarederror',
-        n_estimators=500,           # Reduced number of boosting rounds
+        n_estimators=1000,           # Reduced number of boosting rounds
         learning_rate=0.1,          # Slightly higher learning rate
         max_depth=6,                # Maximum depth of a tree
         subsample=0.8,              # Subsample ratio of the training instance
@@ -45,6 +45,7 @@ def train_and_evaluate_model():
     # Train the model
     print("  Training in progress...")
     xgb_reg.fit(X_train, y_train)
+
     
     print("✅ Model training complete.")
 

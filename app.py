@@ -451,7 +451,7 @@ def main():
             st.markdown("""
             **🧠 2. AI Analysis**
             - Advanced ML prediction
-            - 78.66% accuracy rate
+            - 79.30% accuracy rate
             - Based on 102K+ tweets
             """)
         
