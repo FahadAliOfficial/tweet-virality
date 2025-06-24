@@ -104,17 +104,62 @@ D:/Projects/twitter-virality/.venv/Scripts/Activate.ps1
 python src/data_processor.py
 ```
 
+### ✅ Step 2: Data Splitting (COMPLETED)
+
+**🎯 Goal:** Split processed data into training and testing sets for machine learning.
+
+**📊 Data Split Results:**
+- **Source Dataset:** 102,033 tweets with 42 features
+- **Target Variable:** `log_virality_score` (log-transformed virality metric)
+- **Training Set:** 81,626 samples (80%)
+- **Testing Set:** 20,407 samples (20%)
+- **Features Selected:** 17 meaningful features for ML prediction
+
+**🎯 Selected Features for ML Models:**
+- **Time Features:** `Hour`, `Day`, `IsWeekend` - Optimal posting timing
+- **Content Features:** `hashtag_count`, `mention_count`, `url_count`, `text_length`, `clean_text_length`, `word_count`
+- **User Features:** `Klout`, `Sentiment`, `is_male`, `is_female`, `is_US` - Demographics & influence
+- **Engagement Features:** `like_rate`, `retweet_rate`, `IsReshare` - Historical patterns
+
+**📈 Target Variable Statistics:**
+- **Mean Log Virality Score:** 4.138 (well-distributed)
+- **Standard Deviation:** 1.773
+- **Data Quality:** ✅ No missing values detected
+- **Train/Test Balance:** Consistent distribution across splits
+
+**📁 Generated Files:**
+```
+data/splits/
+├── X_train.csv      # Training features (81,626 × 17)
+├── X_test.csv       # Testing features (20,407 × 17)
+├── y_train.csv      # Training targets (81,626)
+├── y_test.csv       # Testing targets (20,407)
+└── feature_names.txt # List of all 17 features
+```
+
+**🚀 How to Run Data Splitting:**
+```bash
+# Run data splitter (after data processing)
+python src/data_splitter.py
+
+# Or load existing splits in other scripts
+from src.data_splitter import load_splits
+X_train, X_test, y_train, y_test = load_splits()
+```
+
 ### 🔄 Next Steps
 
-**Step 2: Machine Learning Model Development**
-- Build prediction models for Reach, Likes, Retweets
-- Train models using processed features
+**Step 3: Machine Learning Model Development**
+- Build prediction models for virality scoring
+- Compare algorithms: Random Forest, XGBoost, LightGBM
 - Create prediction pipeline with confidence intervals
+- Model validation and performance evaluation
 
-**Step 3: Streamlit Application Development**
-- Design user-friendly interface
+**Step 4: Streamlit Application Development**
+- Design user-friendly interface for post input
 - Integrate Gemini API for topic generation
 - Build real-time prediction dashboard
+- Add optimization suggestions and insights
 
 ## Development Steps
 
