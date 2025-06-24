@@ -430,18 +430,18 @@ The XGBoost model uses gradient boosting with the following pipeline:
 - [ ] **Temporal Modeling**: Time series analysis for trending topics
 - [ ] **Personalization**: User-specific prediction models
 - [ ] **Confidence Intervals**: Uncertainty quantification
-
+<!--##
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+ 👨‍💻 Author
 
 **Your Name** - AI/ML Engineer & Data Scientist
 - 🐦 Twitter: [@your_handle](https://twitter.com/your_handle)
 - 💼 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
 - 📧 Email: your.email@example.com
-
+!-->
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -452,7 +452,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📚 Citation
+---
+<!--
+--## 📚 Citation
 
 If you use this project in your research or work, please cite:
 
@@ -464,7 +466,7 @@ If you use this project in your research or work, please cite:
   url={https://github.com/your-username/twitter-virality}
 }
 ```
-
+!-->
 ---
 
 **🎉 Ready to predict viral content? Launch the app and start optimizing your social media strategy!**
@@ -480,6 +482,10 @@ If you use this project in your research or work, please cite:
 - **Final Size:** 102,033 tweets with 42 columns (99.97% data retention)
 - **Security Cleaning:** Removed 29 rows containing AWS credentials
 - **Feature Engineering:** Created 22 new features from existing data
+
+**📚 Dataset**
+
+- [Data Set](https://www.kaggle.com/datasets/paakhim10/tweets-and-engagement-metrics)
 
 **🔧 Features Created:**
 - **Text Features:** Hashtags, mentions, URLs extraction
@@ -576,7 +582,7 @@ X_train, X_test, y_train, y_test = load_splits()
 
 **Step 4: Streamlit Application Development**
 - Design user-friendly interface for post input
-- Integrate Gemini API for topic generation
+<!-- - Integrate Gemini API for topic generation !-->
 - Build real-time prediction dashboard
 - Add optimization suggestions and insights
 
