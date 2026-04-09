@@ -842,3 +842,10 @@ All 5 steps of the Twitter Virality Prediction system are now fully implemented:
 - **Average Prediction Error**: 290.79 virality points
 - **Production Status**: GOOD FOR BETA - Reliable with some variance
 - **Recommendation**: Consider more features or data for improved performance
+
+## Licence
+
+MIT License
+
+Copyright (c) 2026 Fahad Ali
+
